@@ -1,0 +1,325 @@
+* {box-sizing: border-box;}
+
+body { /* fonte da letra */
+  margin: 0;
+  font-family: verdana;
+  background-color: #ff9fe2cc;
+}
+
+.logo {
+  width: 106px;
+  margin: 30px; /* Espaço ao redor da logo */
+  margin: 20px 10px 20px 50px; /* Aumenta a margem superior para baixar a logo */
+  float: left; /* Coloca a logo à esquerda */
+}
+
+.topnav { /* topnav */
+  overflow: hidden;
+  background-color: #ff35c2f8;
+  height: 80px;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente a logo e a barra de pesquisa */
+}
+
+.topnav .search-container { /* onde a barra se encontra */
+  margin-left: 5%;
+  margin-top: -1%;
+}
+
+.topnav input[type=text] {
+  padding: 5px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 3px solid #ccc; /* Define a borda */
+  border-radius: 20px; /* Borda arredondada */
+  width: 820px; /* Largura opcional */
+  height: 42px;
+  outline: none; /* Remove o contorno ao clicar */
+}
+
+.topnav .search-container button { /* botão de search */
+  padding: 5px 8px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ccc;
+  font-size: 17px;
+  border: solid #ccc;
+  border-radius: 70px;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover { /* fundo do botão de search */
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.topnavv{
+  overflow: hidden;
+  background-color: #fa70d1f8;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  gap: -1%; /* Espaço entre os botões */
+  color: white;
+}
+
+.topnavv a { /* estiliza os links da segunda navbar */
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+  color: white;
+
+}
+
+.topnavv a:hover {
+  background-color: #af007bf8;
+  color: white;
+  width: 20%;
+  font-weight: bold; /* Aplica negrito ao passar o cursor */  
+}
+
+.Hallowen{
+  color: rgb(255, 255, 255);
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  background: 
+      linear-gradient(135deg,#0000 20.5%,rgba(15, 11, 11, 0.99) 0 29.5%,#0000 0) 0 16px,
+      linear-gradient( 45deg,#0000 8%,rgba(15, 11, 11, 0.99) 0 17%, #0000 0 58%) 32px 0,
+      linear-gradient(135deg,#0000 8%,rgba(15, 11, 11, 0.99) 0 17%, #0000 0 58%,rgba(15, 11, 11, 0.99) 0 67%,#0000 0),        
+      linear-gradient( 45deg,#0000 8%,rgba(15, 11, 11, 0.99) 0 17%, #0000 0 58%,rgba(15, 11, 11, 0.99) 0 67%,#0000 0 83%,rgba(15, 11, 11, 0.99) 0 92%,#0000 0),
+      #ef7d00;
+  background-size: 64px 64px;
+  cursor: pointer;
+}
+
+footer{
+  background-color: #ff35c2f8;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.imagem{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 75%;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.product p {
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.botao{
+    margin-left: 87%;
+    width: 10%;
+    height: 6%;
+    font-size: 115%;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid black;
+    position: fixed;
+    z-index: 1000;
+    background-color: #18309bcc;
+    cursor: pointer;
+  }
+
+table {
+    font-family: verdana;
+    border-collapse: collapse;
+    width: 80%; 
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.616);
+  }
+  
+th, td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: center;
+  }
+  
+th {
+    background-color: rgba(61, 71, 163, 0.788);
+  }
+  
+tr:hover {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  
+.imagem1 {
+    width: 30%; /* Define uma largura menor para a imagem */
+  }
+  
+.imagem2 {
+    width: 30%; /* Define uma largura menor para a imagem */
+  }
+  
+.imagem3 {
+    width: 30%; /* Define uma largura menor para a imagem */
+  }
+  
+.imagem4 {
+    width: 30%; /* Define uma largura menor para a imagem */
+  }
+  
+.imagem5 {
+    width: 30%; /* Define uma largura menor para a imagem */
+  }
+  
+  /* Ajuste de largura das colunas */
+td:first-child {
+    width: 30%; /* Define uma largura menor para a primeira coluna */
+  }
+  
+td:nth-child(2) {
+    width: 50%; /* Divide o espaço restante entre as duas colunas */
+  }
+  
+td:nth-child(3){
+    width: 20%;
+  }
+
+/* Estilo para o retângulo vertical */
+.retangulo-vertical {
+  width: 70%; /* Largura do retângulo */
+  height: 414px; /* Altura maior que a largura, para ser vertical */
+  background-color: white; /* Cor de fundo do retângulo */
+  margin: 20px auto; /* Centraliza o retângulo */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.retangulo-vertical h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.retangulo-vertical p {
+  text-align: center;
+  font-size: 1em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Centraliza a imagem */
+.center-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28vh; /* Usa 100% da altura da tela */
+}
+
+/* Remove o sublinhado das tags <a> */
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 26%;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical; /* permite redimensionamento vertical */
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
